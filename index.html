@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>COVID19 Survey Page</title>
+        <meta name="description" content="Corona-virus survey page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+    </head>
+    <body>
+        
+   <div class="container">
+     <header class="header">
+       <h1 id="title">
+         <span id="corona-virus">COVID19</span> Survey Form
+       </h1>
+       <p id="description">
+         Thank you for taking the time to provide this important feedback.
+       </p>
+     </header>
+     <form id="survey-form">
+       <div class="form-group">
+         <label id="name-label" for="name">Name</label>
+         <input type="text" id="name" name="name" class="form-control" placeholder="Enter your Name" required>
+       </div>
+       <div class="form-group">
+         <label id="email-label" for="email">Email</label>
+         <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required>
+       </div>
+       <div class="form-group">
+         <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+         <input type="number" id="number" name="age" min="10" max="99" class="form-control" placeholder="Age">
+       </div>
+       <div class="form-group">
+         <label for="dropdown">Which option best describes your current role?</label>
+         <select id="dropdown" name="role" class="form-control" required>
+           <option disabled selected>Select current role</option>
+           <option value="student">Student</option>
+             <option value="job">Full-Time Job</option>  
+           <option value="learner">Full-Time Learner</option>
+           <option value="preferNo">Prefer Not To Say</option>
+             <option value="other">
+               Other
+           </option>
+           </select>
+       </div>
+       <div class="form-group">
+         <label>Would you recommend this survey to your friend?</label>
+         <label><input type="radio" name="recommend" class="input-radio" value="definitely">Definitely</label>
+         <label><input type="radio" name="recommend" class="input-radio" value="maybe">Maybe</label>
+         <label><input type="radio" name="recommend" class="input-radio" value="not-sure">Not Sure</label>
+       </div>
+       <div class="form-group">
+         <label>What is the best way to prevent COVID19?</label>
+         <select id="best-way" name="bestWayToPreventCovid19" class="form-control" required>
+           <option disabled selected value>Select an option</option>
+           <option value="wash-hands">Clean your hands often.</option>
+           
+           <option value="avoid-contact">Avoid close contact.</option>
+           
+           <option value="wear-facemask">Wear a facemask.</option>
+           
+           <option value="stay-home">Stay home if you are sick</option>
+          <option value="cover-coughs-sneezes">Cover coughs and sneezes.</option>
+           <option value="all">All of these.</option>
+         
+         </select>
+          
+       </div> 
+       <div class="form-group">
+         <label>What precautions are you taking to avoid COVID19?</label>
+         <span class="clue">(Check all that apply)</span>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="wash-hands">Washing hands at regular intervals.</label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="wear-mask">Wearing mask when you are sick.</label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="wear-mask-not-sick">Wearing mask even when you are not sick.</label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="carry-santizer">Always carrying sanitizer in your pocket.</label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="using-disinfectants">
+           Using disinfectants at home to clean the house.
+         </label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="Avoid-shaking-hands">Avoiding handshakes/contact with other persons.</label>
+         <label><input type="checkbox" class="input-checkbox" name="prefer" value="avoid-public-places">
+           Avoid going to public places such as gym,mall,etc.
+         </label>
+       </div>
+       <div class="form-group">
+         <label>Any comments or suggestions?</label>
+         <textarea id="comments" name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+       </div>
+       <div class="form-group">
+         <button type="submit" id="submit" value="Submit" class="submit-button">Submit</button>
+       </div>
+     </form>
+  </div>
+</body>
+</html>
